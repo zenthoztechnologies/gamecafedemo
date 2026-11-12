@@ -18,5 +18,8 @@
     "vite": "^6.4.6"
   },
   "type": "module",
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=20.11"
+  }
 }

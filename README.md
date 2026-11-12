@@ -15,6 +15,8 @@ npm run preview    # serve dist/ locally
 
 `dist/` is a fully static folder. Deploy it anywhere: Netlify, Vercel, Cloudflare Pages, GitHub Pages or any web host.
 
+**Vercel:** `vercel.json` already sets the build (`npm run build` → `dist`) and long-lived cache headers. Import the repo at vercel.com/new and every push to `main` deploys.
+
 ## Design
 
 | | |
