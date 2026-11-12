@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Savepoint — design tokens + base
+   Console navy, signal blue, and the four face-button colours used as a code:
+   ✕ PS5 lounges · □ PC stations · △ VR bay · ○ Retro corner
+   ========================================================================== */
+
+@import '@fontsource-variable/sora/wght.css';
+@import '@fontsource-variable/manrope/wght.css';
+
+:root {
+  /* Colour */
+  --bg: #060b24;
+  --bg-2: #0a1235;
+  --panel: #0e1846;
+  --panel-2: #142058;
+  --glass: rgb(16 26 74 / 0.58);
+  --line: rgb(168 186 255 / 0.14);
+  --line-strong: rgb(168 186 255 / 0.28);
+  --text: #eef2ff;
+  --text-2: #b2bce0;
+  --text-3: #8591bd;
+  --blue: #2b6bff;
+  --blue-hi: #5b8cff;
+  --blue-glow: rgb(43 107 255 / 0.45);
+
+  --cross: #7aa7ff;
+  --circle: #ff5470;
+  --triangle: #2fe0b8;
+  --square: #f48be0;
+  --gold: #ffc857;
+
+  /* Type */
+  --font-display: 'Sora Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Manrope Variable', 'Segoe UI', system-ui, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-lg: clamp(1.125rem, 1.02rem + 0.45vw, 1.3125rem);
+  --fs-xl: clamp(1.375rem, 1.15rem + 1vw, 1.875rem);
+  --fs-2xl: clamp(1.875rem, 1.35rem + 2.3vw, 3.125rem);
+  --fs-3xl: clamp(2.5rem, 1.55rem + 4.2vw, 5rem);
+  --fs-hero: clamp(2.75rem, 1.5rem + 6vw, 6.75rem);
+
+  /* Space (4px base) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
+  --section: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+  --max: 1240px;
+
+  /* Shape — radius follows hierarchy: big surfaces round more */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  --shadow-lift: 0 24px 60px -24px rgb(0 0 0 / 0.7);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-h: 72px;
+
+  color-scheme: dark;
+}
+
+/* Reset ------------------------------------------------------------------ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + var(--s-4));
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 700px at 85% -10%, rgb(43 107 255 / 0.16), transparent 60%),
+    radial-gradient(900px 600px at -10% 30%, rgb(122 167 255 / 0.07), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul[role='list'], ol[role='list'] { list-style: none; padding: 0; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+img, picture, svg, video { display: block; max-width: 100%; }
+img {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+::selection { background: var(--blue); color: #fff; }
+
+/* PS-style focus: crisp white ring with a blue halo */
+:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--blue-glow);
+  border-radius: var(--r-sm);
+}
+
+[hidden] { display: none !important; }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--s-4);
+  top: -100px;
+  z-index: 100;
+  padding: var(--s-3) var(--s-5);
+  background: #fff;
+  color: var(--bg);
+  border-radius: var(--r-pill);
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus { top: var(--s-4); }
+
+/* Layout ----------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: calc(var(--max) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section { padding-block: var(--section); }
+.section--tight { padding-block: calc(var(--section) * 0.6); }
+.section + .section { padding-top: 0; }
+
+.section-head {
+  display: grid;
+  gap: var(--s-4);
+  max-width: 46rem;
+  margin-bottom: clamp(2rem, 1.4rem + 2.4vw, 3.5rem);
+}
+.section-head--split {
+  max-width: none;
+  grid-template-columns: 1fr;
+  align-items: end;
+}
+@media (min-width: 860px) {
+  .section-head--split { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--s-7); }
+}
+
+.h-display { font-size: var(--fs-3xl); font-weight: 300; letter-spacing: -0.035em; }
+.h-section { font-size: var(--fs-2xl); font-weight: 400; letter-spacing: -0.03em; }
+.h-card { font-size: var(--fs-xl); font-weight: 500; }
+.lede { font-size: var(--fs-lg); color: var(--text-2); max-width: 38rem; }
+.muted { color: var(--text-2); }
+.small { font-size: var(--fs-sm); }
+
+.flow > * + * { margin-top: var(--s-4); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

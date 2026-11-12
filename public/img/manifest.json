@@ -1,0 +1,266 @@
+{
+  "lounge-tv": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1471,
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwBACdASoYABIAPu1qq08ppiOiMBgIATAdiUAXZmyANUD6zz+h46RHllYxcQ9wAP70I3wdPboKEyqAmoz84ZnJLPRCeVI0klHIo8oNRStr81BR2jruXQyChfZg9GoA",
+    "credit": "https://unsplash.com/photos/1593305841991-05c297ba4575"
+  },
+  "esports-player": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAwCdASoYABAALrV2u12jqampiYC0SzgABi/+ihmKc135dMYwAAD+9JbedGKcWtYIOrtTYsMiRy2tp4BjgAAA",
+    "credit": "https://unsplash.com/photos/1542751371-adc38448a05e"
+  },
+  "pc-setup": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1282,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwBACdASoYABAAPu1kq04ppaQiMAgBMB2JZQDCgBk4B8aUM4xdY3ApagAA/oKD2hQj39EutrSVoxLjCSIn5BigkjaD5J0xi3j2LXzUn3ryQ7Gy2IyHDQAA",
+    "credit": "https://unsplash.com/photos/1598550476439-6847785fcea6"
+  },
+  "vr-headset": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoYABAAPu1kqk2ppaQiMAgBMB2JbACxC8ADA1b1Nr1IBC98YAD+3lR5T+edtPwSkIkfVVbWvtDO/3ZxVaBqq4Qe3VPR/uI7A7T7P1wul3Yv+kz/+ctrgAAA",
+    "credit": "https://unsplash.com/photos/1622979135225-d2ba269cf1ac"
+  },
+  "retro-consoles": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQBACdASoYABAAPu1qrU8ppiQiMAgBMB2JbACdMoRwACnKJvju6xHqbIQAAP70KS0rStwEw9hLoxHBrjqCCL0VTIoMT7Vxna0/7ZavzD2EjLeos198h7oTrVHADGI7wgaBI8bTcx3QQvAA",
+    "credit": "https://unsplash.com/photos/1550745165-9bc0b252726f"
+  },
+  "ps5-blue": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 3413,
+    "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwBQCdASoYACsAPt1YpE2opSOiNUgBEBuJagCdMtAQFo6DMh+fwBPvry0sN3Sx0rlxzx1IcLTFwAD+bc1pl14/t3Cbz5GsgkLvgR2n7wLqSyIh3tKKxTGBaminXV2YpEAgpDTacN1A2ECgUnSbya9ksZrhcvRY3j3BHOxhXK96NyskPAvUt0zSmIGF4zFQ3Xi3olzAAAA=",
+    "credit": "https://unsplash.com/photos/1607853202273-797f1c22a38e"
+  },
+  "ps5-white": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoYABAAPu1orU2ppqSiMAgBMB2JZQDE2CHfFDTU6tlpCGFMrQAA/t6rlHHwksfK4DMTZ5eaQH1NiSm2ODNCG9QETQsCSchThjG1OUj7gtkND1Jbm0AAAA==",
+    "credit": "https://unsplash.com/photos/1606144042614-b2417e99c4e3"
+  },
+  "pad-dark": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1274,
+    "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAwCdASoYABAAPu1Ct1apoqakGAEwHYlpAAB7sTWqzQoAAP7wyxGiuIuc7dpMVNaWQu+igAA=",
+    "credit": "https://unsplash.com/photos/1592155931584-901ac15763e3"
+  },
+  "pad-neon": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 2880,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASoYACQAPu1irE+ppSQiMBVaqTAdiWwAnTM9xy+zcfkB9X5ELyeUF3fKCwAA/uvi0b9Gr54+bgvE+UZIykTRiuxCDhxJK7aJxx96U4oOBUJr4bwkDUyCDvJbizW6iPPBaMsKWyfRnNuXWt2YYH1M5oHHVkbh0FXZSvN3kaf/EKTkY2qFRQj23fU9YU1OBJfUK5mq8DWgy1C1gAAA",
+    "credit": "https://unsplash.com/photos/1586182987320-4f376d39d787"
+  },
+  "pad-teal": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAwCdASoYABAAPu1iqU2ppaOjMAgBMB2JYwC7ACHdAQ9NrBLuAAD+6TSnvBmyFoQ4qSumAUWlDlAbt+Nwr736T+FQAAAA",
+    "credit": "https://unsplash.com/photos/1552820728-8b83bb6b773f"
+  },
+  "arcade-room": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYABAAPu1orU2ppqSiMAgBMB2JbACdMoABloHWJXQVMwAA/vFsDV+XdQurkSwfiMo4zPumMvN68NXztethEKMwzCHLkw+F7atj8a+7Kaw9lj/qYX25JramdEAAAA==",
+    "credit": "https://unsplash.com/photos/1511512578047-dfb367046420"
+  },
+  "neon-room": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoYAA0APu1kqU2ppaOiMAgBMB2JbACdMoR3ACWY7G9BIAK8NAAA/u6hJuxNN1qIaDf6mmMX76n4KZzjJjNFpk3g6Ez/r4BJ8wWU4gCTUjoAAA==",
+    "credit": "https://unsplash.com/photos/1616588589676-62b3bd4ff6d2"
+  },
+  "couch-coop": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoYABAAPu1iqk2ppaQiMAgBMB2JYgCdAB6W2oIW9KpsrrzCikAA/tS3KaOmhVXj7LuwG6V4qF6yJYYYRJB60DoqjmTEqaa+4SbvrshKYBPLv9NzZoXrRdxDwocrOTEZQAA=",
+    "credit": "https://unsplash.com/photos/1493711662062-fa541adb3fc8"
+  },
+  "gamer-red": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JagCw7CHccqy4AexyrSdAAAD+7ua/POTpUY4Ik220ufAsaMFz0zpYpKPPi+DUVlmxF7fG6ZkNP0nyZvXKeonc+0LmeA9JZgsaLXsVHwVMUoQo9AAAAA==",
+    "credit": "https://unsplash.com/photos/1534423861386-85a16f5d13fd"
+  },
+  "lan-players": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoYABAAPu1kqU2ppaQiMAgBMB2JQBOgAw6/83H7gWHdLJ1AAP7qIn3EPmx2N8AADCDoHP86QKRURuU/YQEEwmEzi+rUF/phPhmaCEJ2d4/g8AAA",
+    "credit": "https://unsplash.com/photos/1560253023-3ec5d502959f"
+  },
+  "esports-crowd": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYAA0APu1kqk2ppaQiMAgBMB2JbACdMoADNK0NBOikDuXwAPDAHf6/+bSYJVsfuOW4/zIFUfcbk/thR/zNPCVLSJ2SH+2idY1YQbsteQSgUA3xbycQFl0UwVa3cwZe8PZwrsnfF9bQAA==",
+    "credit": "https://unsplash.com/photos/1558008258-3256797b43f3"
+  },
+  "rgb-keyboard": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1154,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdABuVE9Z9idS1AAD8Zz18huLevHDz/U9OCrRwBgmF9WGVwKH8lTgRqp/Lgd7ll/r5biabL1vxdAAAAA==",
+    "credit": "https://unsplash.com/photos/1538481199705-c710c4e965fc"
+  },
+  "game-over": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1440,
+    "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoYABIAPu1grFAppSQ0sBgIApAdiWUAzFgOma/p5G+xrgAA/uNFhIU3RzivNhacwCXQDqa1QdxXed6p0t+YH/fYeKkhX3qAAAA=",
+    "credit": "https://unsplash.com/photos/1579373903781-fd5c0c30c4cd"
+  },
+  "iced-coffee": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1282,
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYABAAPu1kqU2ppaOiMAgBMB2JQBOgAuTnW7BRAtMcUwDngAD+FmUo4LBdWLoDJoermbOgPGzfRAIGU0JfjCRTEgQ4l5Zsp7rhHgzXD5wfsuMzP680dBK+4IgyTO0NAAA=",
+    "credit": "https://unsplash.com/photos/1461023058943-07fcbe16d735"
+  },
+  "latte-pour": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1074,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoYAA0APu1iqk2ppaQiMAgBMB2JYgC06A+PqWbvWhLuIAD+J7s/OdyShpLmTCChaGXyQ8yf3djmbKRFdtDuMyQDv6S/yrOJcMqewmVFm0uSNqAA",
+    "credit": "https://unsplash.com/photos/1541167760496-1628856ab772"
+  },
+  "burger": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1595,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYABQAPu1kqE2ppaOiMAgBMB2JaACnFCFrylXPkJ7fbvdXXzMQAP7o0EcrP5Yms8UizDP/8f3FM3MTq4jm4MJuMmxfWF+a8mQQbGwhaYuwZ1SH4S1DvggGfQtFc6C+sXv8DxgJPgAAAA==",
+    "credit": "https://unsplash.com/photos/1568901346375-23c9450c58cd"
+  },
+  "pizza": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1280,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdACPwQJ6CFfS6K1DgAP7NTy/JGSn+AFkgCLmYWk4gK/avpFRrv+JVpW2pIp1o00V7PD6KOtm8aAA=",
+    "credit": "https://unsplash.com/photos/1513104890138-7c749659a591"
+  },
+  "milkshake": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 2880,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBgCdASoYACQAPu1krFCppSQiqrgMATAdiWMAwNwJ46IpbCO/eu7XXrQI2Cy2BjaQHS1wd4gQIZZIAPhcZ5K3EDLYc2TMBNJrCP1n+2EolX/9Y3lFKks+svd1leBRlfbideFrSjm3TKj2IwoXOk60HqkCLgCBCOTjk958rlAQxc3inrHrMldmQeUrd8VKtXfAAA==",
+    "credit": "https://unsplash.com/photos/1572490122747-3968b75cc699"
+  },
+  "donuts": {
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 2400,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASoYAB4APtFWoU2oJKMiN+gBABoJYgCsMySsdG3hMzmL6wC31IGzTi+eZcDZKWmtgAD+UcFaa0TCH24duMMHYfrz+48N0a9Stu3FK48qD6ZvPb9Ph6KqT6eD37pHzgFKTxHDtW4RFoSeBMbYDDLnwOK4Djw8TILGd2GHY+sM0pJXtz+cXmSM0sZYAAA=",
+    "credit": "https://unsplash.com/photos/1551024601-bec78aea704b"
+  }
+}

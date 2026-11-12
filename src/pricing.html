@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- include:head -->
+  <title>Pricing and memberships | Savepoint Gaming Café</title>
+  <meta name="description" content="Hourly rates for PS5 lounges, PC stations, VR and retro, plus memberships, day passes and party packages at Savepoint.">
+  <meta property="og:title" content="Savepoint pricing">
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pricing.js"></script>
+</head>
+<body>
+  <!-- include:header -->
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__media"><!-- pic name="pad-dark" alt="" sizes="100vw" priority --></div>
+      <div class="container page-hero__content">
+        <h1>Simple rates, no sign-up fee</h1>
+        <p class="lede">Pay for the time you play. Off-peak is weekdays before 5pm; peak is evenings and weekends.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">Hourly rates</h2>
+          <div class="flow">
+            <p class="muted">Switch to see what members pay.</p>
+            <div class="toggle" role="group" aria-label="Show prices for" data-price-toggle>
+              <button type="button" data-mode="guest" aria-pressed="true">Pay as you go</button>
+              <button type="button" data-mode="member" aria-pressed="false">Members</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="rate-table">
+            <caption class="sr-only">Rates by zone</caption>
+            <thead>
+              <tr><th scope="col">Zone</th><th scope="col">Unit</th><th scope="col">Off-peak</th><th scope="col">Peak</th><th scope="col">Bundle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="zone-name"><svg class="glyph c-cross" aria-hidden="true"><use href="#g-cross"/></svg>PS5 Lounge</span></th>
+                <td class="muted">Per booth, up to 4</td>
+                <td class="num" data-label="Off-peak" data-guest="$9" data-member="$7">$9</td>
+                <td class="num" data-label="Peak" data-guest="$12" data-member="$10">$12</td>
+                <td class="num" data-label="3 hours" data-guest="$30" data-member="$24">$30 <small>3 hrs</small></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="zone-name"><svg class="glyph c-square" aria-hidden="true"><use href="#g-square"/></svg>PC Station</span></th>
+                <td class="muted">Per seat</td>
+                <td class="num" data-label="Off-peak" data-guest="$7" data-member="$5">$7</td>
+                <td class="num" data-label="Peak" data-guest="$9" data-member="$7">$9</td>
+                <td class="num" data-label="3 hours" data-guest="$22" data-member="$16">$22 <small>3 hrs</small></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="zone-name"><svg class="glyph c-triangle" aria-hidden="true"><use href="#g-triangle"/></svg>VR Bay</span></th>
+                <td class="muted">Per 30 minutes</td>
+                <td class="num" data-label="Off-peak" data-guest="$12" data-member="$10">$12</td>
+                <td class="num" data-label="Peak" data-guest="$14" data-member="$12">$14</td>
+                <td class="num" data-label="1 hour" data-guest="$22" data-member="$18">$22 <small>1 hr</small></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="zone-name"><svg class="glyph c-circle" aria-hidden="true"><use href="#g-circle"/></svg>Retro Corner</span></th>
+                <td class="muted">Per seat</td>
+                <td class="num" data-label="Off-peak" data-guest="$5" data-member="Free">$5</td>
+                <td class="num" data-label="Peak" data-guest="$5" data-member="Free">$5</td>
+                <td class="num" data-label="3 hours" data-guest="$12" data-member="Free">$12 <small>3 hrs</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted" style="margin-top: var(--s-4)">Students get 20% off off-peak rates with a valid ID. Prices include tax.</p>
+      </div>
+    </section>
+
+    <section class="section" id="memberships">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">Passes and memberships</h2>
+          <p class="lede">Monthly plans renew automatically and you can cancel from your account any time before the renewal date.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Day pass</h3>
+            <div class="price-card__amount"><b>$25</b><span>one day</span></div>
+            <p>Unlimited PS5, PC and retro from open to close on the day you buy it.</p>
+            <ul class="ticks">
+              <li>Move between zones freely</li>
+              <li>Best on weekends and holidays</li>
+              <li>10% off food and drinks</li>
+            </ul>
+            <a class="btn" href="book.html">Book with a day pass</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Most popular</span>
+            <h3>Player</h3>
+            <div class="price-card__amount"><b>$29</b><span>a month</span></div>
+            <p>For regulars who come in once a week or more.</p>
+            <ul class="ticks">
+              <li>$2 off every hour, every zone</li>
+              <li>Retro corner included</li>
+              <li>Free Friday Night Cup entry</li>
+              <li>Book up to 14 days ahead</li>
+            </ul>
+            <a class="btn btn--primary" href="book.html#contact">Join as a Player</a>
+          </article>
+          <article class="price-card">
+            <h3>Unlimited</h3>
+            <div class="price-card__amount"><b>$79</b><span>a month</span></div>
+            <p>Play as much as you like on PS5, PC and retro.</p>
+            <ul class="ticks">
+              <li>Unlimited hours, peak included</li>
+              <li>Four 30-minute VR sessions a month</li>
+              <li>Priority booking for events</li>
+              <li>15% off food and drinks</li>
+            </ul>
+            <a class="btn" href="book.html#contact">Go Unlimited</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h-section">Parties and team nights</h2>
+          <p class="lede">We run the night so you can play it. A host sets up the brackets, handles the food and keeps the music at the right volume.</p>
+        </div>
+        <div class="packages">
+          <article class="package">
+            <!-- pic name="couch-coop" alt="Two people playing a football game on a big TV with controllers" sizes="(min-width: 760px) 50vw, 100vw" -->
+            <div class="package__body">
+              <h3>Birthday lounge</h3>
+              <p class="muted">Two hours in a private PS5 lounge for up to eight guests, with two large pizzas, a round of shakes and a dedicated host.</p>
+              <p class="package__price">$189 for the group</p>
+              <a class="btn btn--blue" href="book.html#contact">Plan a birthday</a>
+            </div>
+          </article>
+          <article class="package">
+            <!-- pic name="lan-players" alt="Players wearing headsets competing at a row of gaming PCs" sizes="(min-width: 760px) 50vw, 100vw" -->
+            <div class="package__body">
+              <h3>Team night</h3>
+              <p class="muted">A row of six PCs or three lounges for three hours, a hosted tournament on the stage screen and food platters for the whole team.</p>
+              <p class="package__price">From $690</p>
+              <a class="btn btn--blue" href="book.html#contact">Plan a team night</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head"><h2 class="h-section">Questions about paying</h2></div>
+        <div class="faq">
+          <details>
+            <summary>When do I pay for a booking?</summary>
+            <div><p>At the counter when you check in. Bookings are free to cancel up to two hours before your start time.</p></div>
+          </details>
+          <details>
+            <summary>What happens if I play past my booked time?</summary>
+            <div><p>If the station isn't booked after you, keep playing and we charge the extra time in 15-minute steps. We'll let you know ten minutes before anyone else needs it.</p></div>
+          </details>
+          <details>
+            <summary>Do you sell gift cards?</summary>
+            <div><p>Yes, in any amount from $20 at the counter. They work for time, food and memberships.</p></div>
+          </details>
+          <details>
+            <summary>Can I pause my membership?</summary>
+            <div><p>You can pause once a year for up to two months at no charge. Ask at the counter or email us.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>

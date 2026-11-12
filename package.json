@@ -1,0 +1,22 @@
+{
+  "name": "savepoint-gaming-cafe",
+  "version": "1.0.0",
+  "description": "Savepoint — a PlayStation-inspired gaming café website (static, multi-page)",
+  "scripts": {
+    "dev": "vite",
+    "images": "NODE_USE_ENV_PROXY=1 node scripts/images.mjs",
+    "build": "vite build && node scripts/critical.mjs",
+    "preview": "vite preview --outDir ../dist"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/sora": "^5.3.0",
+    "beasties": "^0.3.5",
+    "lightningcss": "^1.33.0",
+    "sharp": "^0.33.5",
+    "vite": "^6.4.6"
+  },
+  "type": "module",
+  "private": true
+}

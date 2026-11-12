@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- include:head -->
+  <title>Book a station | Savepoint Gaming Café</title>
+  <meta name="description" content="Book a PS5 lounge, PC station, VR bay or retro corner at Savepoint. Pick a time, see the price and pay when you arrive.">
+  <meta property="og:title" content="Book a station at Savepoint">
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/book.js"></script>
+</head>
+<body>
+  <!-- include:header -->
+
+  <main id="main">
+    <section class="section" style="padding-top: calc(var(--header-h) + var(--s-8))">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="h-display">Book a station</h1>
+          <p class="lede">Takes under a minute. Nothing to pay until you check in, and you can cancel up to two hours before.</p>
+        </div>
+
+        <div class="booking" data-booking>
+          <!-- Set action="" to your form endpoint (e.g. Formspree) to receive bookings. See README. -->
+          <form class="booking-form" action="" method="post" novalidate data-form>
+            <fieldset class="form-step">
+              <legend><span>1</span>Choose a zone</legend>
+              <div class="zone-picker">
+                <div class="zone-option">
+                  <input type="radio" name="zone" id="z-ps5" value="ps5" checked>
+                  <label for="z-ps5"><svg class="glyph c-cross" aria-hidden="true"><use href="#g-cross"/></svg><span><b>PS5 Lounge</b><small>Private booth, up to 4</small></span><em>$9/hr</em></label>
+                </div>
+                <div class="zone-option">
+                  <input type="radio" name="zone" id="z-pc" value="pc">
+                  <label for="z-pc"><svg class="glyph c-square" aria-hidden="true"><use href="#g-square"/></svg><span><b>PC Station</b><small>Per seat</small></span><em>$7/hr</em></label>
+                </div>
+                <div class="zone-option">
+                  <input type="radio" name="zone" id="z-vr" value="vr">
+                  <label for="z-vr"><svg class="glyph c-triangle" aria-hidden="true"><use href="#g-triangle"/></svg><span><b>VR Bay</b><small>Per player, 12+</small></span><em>$24/hr</em></label>
+                </div>
+                <div class="zone-option">
+                  <input type="radio" name="zone" id="z-retro" value="retro">
+                  <label for="z-retro"><svg class="glyph c-circle" aria-hidden="true"><use href="#g-circle"/></svg><span><b>Retro Corner</b><small>Per seat</small></span><em>$5/hr</em></label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step">
+              <legend><span>2</span>Pick a time</legend>
+              <div class="form-grid form-grid--2">
+                <div class="field">
+                  <label for="date">Date</label>
+                  <input class="input" type="date" id="date" name="date" required data-date>
+                  <p class="field__error" data-error-for="date"></p>
+                </div>
+                <div class="field">
+                  <label for="players">Players</label>
+                  <select class="input" id="players" name="players" data-players>
+                    <option value="1">1 player</option>
+                    <option value="2" selected>2 players</option>
+                    <option value="3">3 players</option>
+                    <option value="4">4 players</option>
+                    <option value="5">5 players</option>
+                    <option value="6">6 players</option>
+                    <option value="8">8 players</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <span id="slots-label" class="field-label" style="font-size: var(--fs-sm); font-weight: 700">Start time</span>
+                <div class="slots" role="radiogroup" aria-labelledby="slots-label" data-slots></div>
+                <input type="hidden" name="time" data-time>
+                <p class="field__error" data-error-for="time"></p>
+              </div>
+              <div class="field">
+                <span id="duration-label" style="font-size: var(--fs-sm); font-weight: 700">How long</span>
+                <div class="stepper" role="group" aria-labelledby="duration-label">
+                  <button type="button" aria-label="Shorter" data-step="-1">−</button>
+                  <output aria-live="polite" data-duration-label>2 hours</output>
+                  <button type="button" aria-label="Longer" data-step="1">+</button>
+                </div>
+                <input type="hidden" name="duration" value="2" data-duration>
+                <p class="hint" data-duration-hint></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step">
+              <legend><span>3</span>Your details</legend>
+              <div class="form-grid form-grid--2">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input class="input" type="text" id="name" name="name" autocomplete="name" required>
+                  <p class="field__error" data-error-for="name"></p>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input class="input" type="email" id="email" name="email" autocomplete="email" required>
+                  <p class="field__error" data-error-for="email"></p>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone <span class="hint">(optional)</span></label>
+                  <input class="input" type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+                <div class="field">
+                  <label for="member">Membership</label>
+                  <select class="input" id="member" name="member" data-member>
+                    <option value="no">I'm not a member</option>
+                    <option value="yes">I'm a member</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="notes">Anything we should know? <span class="hint">(optional)</span></label>
+                <textarea class="input" id="notes" name="notes" rows="3" placeholder="Birthday, accessibility needs, a game you want installed"></textarea>
+              </div>
+            </fieldset>
+
+            <div class="btn-row">
+              <button class="btn btn--primary btn--lg" type="submit" data-submit>Request booking</button>
+            </div>
+            <p class="field__error" data-form-error></p>
+          </form>
+
+          <aside class="summary" aria-labelledby="summary-title">
+            <h2 id="summary-title">Your booking</h2>
+            <dl>
+              <div><dt>Zone</dt><dd data-sum="zone">PS5 Lounge</dd></div>
+              <div><dt>Date</dt><dd data-sum="date">Choose a date</dd></div>
+              <div><dt>Start</dt><dd data-sum="time">Choose a time</dd></div>
+              <div><dt>Length</dt><dd data-sum="duration">2 hours</dd></div>
+              <div><dt>Players</dt><dd data-sum="players">2</dd></div>
+              <div><dt>Rate</dt><dd data-sum="rate">$9 an hour</dd></div>
+            </dl>
+            <div class="summary__total"><span>Estimated total</span><b data-sum="total">$18</b></div>
+            <p class="small muted">Pay at the counter when you arrive. Peak rates apply after 5pm and at weekends.</p>
+          </aside>
+        </div>
+
+        <div class="confirm" role="status" tabindex="-1" data-confirm hidden>
+          <div class="confirm__icon"><svg class="glyph" aria-hidden="true"><use href="#g-check"/></svg></div>
+          <h2>Booking requested</h2>
+          <p data-confirm-text>We'll email you a confirmation shortly.</p>
+          <p class="small muted">Reference <b data-confirm-ref></b></p>
+          <div class="btn-row" style="justify-content: center">
+            <a class="btn btn--primary" href="cafe.html">Pre-order food</a>
+            <a class="btn" href="book.html">Make another booking</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h-section">Parties, memberships and everything else</h2>
+          <p class="lede">For private hire, team nights or membership sign-ups, get in touch and we'll reply the same day.</p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <svg class="glyph c-cross" style="font-size: 1.5rem" aria-hidden="true"><use href="#g-pin"/></svg>
+            <h3>Visit</h3>
+            <p>48 Harbour Street, Docklands. Two minutes from Docklands station.</p>
+            <a class="link" href="https://maps.google.com/?q=48+Harbour+Street" target="_blank" rel="noopener">Get directions</a>
+          </div>
+          <div class="contact-card">
+            <svg class="glyph c-triangle" style="font-size: 1.5rem" aria-hidden="true"><use href="#g-clock"/></svg>
+            <h3>Call or email</h3>
+            <p><a href="tel:+15550142290">(555) 014-2290</a><br><a href="mailto:hello@savepoint.example">hello@savepoint.example</a></p>
+            <p class="open-dot" data-open-status>Open today</p>
+          </div>
+          <div class="contact-card">
+            <svg class="glyph c-gold" style="font-size: 1.5rem" aria-hidden="true"><use href="#g-trophy"/></svg>
+            <h3>Private hire</h3>
+            <p>Birthdays from $189, team nights from $690, full-floor buyouts on request.</p>
+            <a class="link" href="mailto:hello@savepoint.example?subject=Private%20hire">Email about private hire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>

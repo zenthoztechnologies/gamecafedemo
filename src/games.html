@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- include:head -->
+  <title>Game library | Savepoint Gaming Café</title>
+  <meta name="description" content="Search every game installed at Savepoint across PS5, PC, VR and retro consoles. Filter by platform, genre and number of players.">
+  <meta property="og:title" content="Savepoint game library">
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/games.js"></script>
+</head>
+<body>
+  <!-- include:header -->
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__media"><!-- pic name="pad-teal" alt="" sizes="100vw" priority --></div>
+      <div class="container page-hero__content">
+        <h1>The library</h1>
+        <p class="lede">Everything below is installed and ready. Can't find a game? Ask at the counter and we'll usually have it downloaded before your drink arrives.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="library-tools">
+          <div class="search">
+            <label class="sr-only" for="game-search">Search games</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2" stroke-linecap="round"/></svg>
+            <input class="input" id="game-search" type="search" placeholder="Search by title or genre" autocomplete="off" data-search>
+          </div>
+          <div class="chip-group" role="group" aria-label="Platform" data-platforms>
+            <button class="chip" type="button" data-platform="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-platform="ps5" aria-pressed="false"><svg class="glyph c-cross" aria-hidden="true"><use href="#g-cross"/></svg>PS5</button>
+            <button class="chip" type="button" data-platform="pc" aria-pressed="false"><svg class="glyph c-square" aria-hidden="true"><use href="#g-square"/></svg>PC</button>
+            <button class="chip" type="button" data-platform="vr" aria-pressed="false"><svg class="glyph c-triangle" aria-hidden="true"><use href="#g-triangle"/></svg>VR</button>
+            <button class="chip" type="button" data-platform="retro" aria-pressed="false"><svg class="glyph c-circle" aria-hidden="true"><use href="#g-circle"/></svg>Retro</button>
+          </div>
+        </div>
+
+        <div class="chip-group" role="group" aria-label="Genre" data-genres style="margin-bottom: var(--s-6)"></div>
+
+        <h2 class="sr-only">Games</h2>
+        <p class="library-count" aria-live="polite" data-count></p>
+        <div class="game-grid" data-grid></div>
+        <div class="empty" data-empty hidden>
+          <p>No games match that search. Try a different title, or clear the filters to see the full library.</p>
+          <button class="btn" type="button" data-reset>Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-band">
+          <!-- pic name="couch-coop" alt="" sizes="100vw" -->
+          <div class="flow">
+            <h2>Found your game? Grab a seat.</h2>
+            <p>Booths and rigs are matched to the platform, so you'll land on the right hardware automatically.</p>
+          </div>
+          <div class="btn-row"><a class="btn btn--primary btn--lg" href="book.html">Book a station</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>

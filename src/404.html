@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- include:head -->
+  <title>Page not found | Savepoint Gaming Café</title>
+  <meta name="robots" content="noindex">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <!-- include:header -->
+
+  <main id="main" class="gameover">
+    <!-- pic name="game-over" alt="" sizes="100vw" priority -->
+    <div class="gameover__body">
+      <h1>Game over</h1>
+      <p class="lede">This page doesn't exist. It may have moved, or the link has a typo.</p>
+      <p class="gameover__count" aria-hidden="true">Continue? <span data-continue>9</span></p>
+      <div class="btn-row" style="justify-content: center">
+        <a class="btn btn--primary btn--lg" href="index.html">Continue to home</a>
+        <a class="btn btn--lg" href="book.html">Book a station</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var el = document.querySelector('[data-continue]');
+      var n = 9;
+      var t = setInterval(function () {
+        n -= 1;
+        el.textContent = n;
+        if (n <= 0) { clearInterval(t); el.parentNode.textContent = 'Press continue'; }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>

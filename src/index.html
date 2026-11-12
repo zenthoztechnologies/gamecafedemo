@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- include:head -->
+  <title>Savepoint Gaming Café — PS5 lounges, PC stations, VR and retro</title>
+  <meta name="description" content="Savepoint is a gaming café in Docklands with private PS5 lounges, 240Hz PC stations, a VR bay, a retro corner, weekly tournaments and food delivered to your seat.">
+  <meta property="og:title" content="Savepoint Gaming Café">
+  <meta property="og:description" content="PS5 lounges, PC stations, VR and retro under one roof. Book by the hour.">
+  <link rel="preload" as="image" type="image/avif" imagesrcset="img/lounge-tv-640.avif 640w, img/lounge-tv-1280.avif 1280w, img/lounge-tv-1920.avif 1920w" imagesizes="100vw" fetchpriority="high">
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/console.js"></script>
+</head>
+<body>
+  <!-- include:header -->
+
+  <main id="main">
+    <!-- Console home screen ------------------------------------------------ -->
+    <section class="console" data-console aria-label="Explore Savepoint">
+      <div class="console__bg">
+        <div class="console__layer is-active" data-layer="0">
+          <!-- pic name="lounge-tv" alt="" sizes="100vw" priority -->
+        </div>
+      </div>
+      <template data-layer-tpl="1"><!-- pic name="esports-player" alt="" sizes="100vw" --></template>
+      <template data-layer-tpl="2"><!-- pic name="pc-setup" alt="" sizes="100vw" --></template>
+      <template data-layer-tpl="3"><!-- pic name="vr-headset" alt="" sizes="100vw" --></template>
+      <template data-layer-tpl="4"><!-- pic name="retro-consoles" alt="" sizes="100vw" --></template>
+
+      <div class="container console__inner">
+        <div class="console__status">
+          <div class="console__who">
+            <span class="console__avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.5"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>
+            </span>
+            <div>
+              <h1>Savepoint Gaming Café</h1>
+              <p>48 Harbour Street, Docklands</p>
+            </div>
+          </div>
+          <div class="console__sys">
+            <span class="open-dot" data-open-status>Open today</span>
+            <span class="console__clock" data-clock aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="console__row">
+          <ul class="console__tiles" role="tablist" aria-label="What's at Savepoint">
+            <li role="presentation">
+              <button class="tile" role="tab" id="tab-ps5" aria-selected="true" aria-controls="panel-ps5" data-name="PS5 Lounges" style="--accent: var(--cross)">
+                <!-- pic name="lounge-tv" alt="" sizes="160px" eager -->
+                <svg class="glyph tile__glyph" aria-hidden="true"><use href="#g-cross"/></svg>
+                <span class="sr-only">PS5 Lounges</span>
+              </button>
+            </li>
+            <li role="presentation">
+              <button class="tile" role="tab" id="tab-cups" aria-selected="false" aria-controls="panel-cups" tabindex="-1" data-name="Tournaments" style="--accent: var(--gold)">
+                <!-- pic name="esports-player" alt="" sizes="160px" eager -->
+                <svg class="glyph tile__glyph" aria-hidden="true"><use href="#g-trophy"/></svg>
+                <span class="sr-only">Tournaments</span>
+              </button>
+            </li>
+            <li role="presentation">
+              <button class="tile" role="tab" id="tab-pc" aria-selected="false" aria-controls="panel-pc" tabindex="-1" data-name="PC Stations" style="--accent: var(--square)">
+                <!-- pic name="pc-setup" alt="" sizes="160px" eager -->
+                <svg class="glyph tile__glyph" aria-hidden="true"><use href="#g-square"/></svg>
+                <span class="sr-only">PC Stations</span>
+              </button>
+            </li>
+            <li role="presentation">
+              <button class="tile" role="tab" id="tab-vr" aria-selected="false" aria-controls="panel-vr" tabindex="-1" data-name="VR Bay" style="--accent: var(--triangle)">
+                <!-- pic name="vr-headset" alt="" sizes="160px" eager -->
+                <svg class="glyph tile__glyph" aria-hidden="true"><use href="#g-triangle"/></svg>
+                <span class="sr-only">VR Bay</span>
+              </button>
+            </li>
+            <li role="presentation">
+              <button class="tile" role="tab" id="tab-retro" aria-selected="false" aria-controls="panel-retro" tabindex="-1" data-name="Retro Corner" style="--accent: var(--circle)">
+                <!-- pic name="retro-consoles" alt="" sizes="160px" eager -->
+                <svg class="glyph tile__glyph" aria-hidden="true"><use href="#g-circle"/></svg>
+                <span class="sr-only">Retro Corner</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="console__foot">
+          <div class="console__detail">
+            <div class="console__panel" role="tabpanel" id="panel-ps5" aria-labelledby="tab-ps5">
+              <h2 class="console__title">PS5 Lounges</h2>
+              <p class="console__desc">Private booths with a 65-inch 4K screen, four DualSense controllers and a sofa that actually fits four.</p>
+              <div class="facts">
+                <span class="fact"><svg class="glyph c-cross" aria-hidden="true"><use href="#g-cross"/></svg>18 booths</span>
+                <span class="fact">4K at 120Hz</span>
+                <span class="fact">From $9 an hour</span>
+              </div>
+              <div class="btn-row">
+                <a class="btn btn--primary btn--lg" href="book.html?zone=ps5">Book a lounge</a>
+                <a class="btn btn--lg" href="stations.html#ps5">See the lounges</a>
+              </div>
+            </div>
+
+            <div class="console__panel" role="tabpanel" id="panel-cups" aria-labelledby="tab-cups" hidden>
+              <h2 class="console__title">Friday Night Cups</h2>
+              <p class="console__desc">Brackets every Friday, a monthly championship and a stage screen for the finals. Members enter free.</p>
+              <div class="facts">
+                <span class="fact"><svg class="glyph c-gold" aria-hidden="true"><use href="#g-trophy"/></svg>Every Friday, 7pm</span>
+                <span class="fact">EA FC, Tekken 8, Valorant</span>
+                <span class="fact">$500 monthly prize pool</span>
+              </div>
+              <div class="btn-row">
+                <a class="btn btn--primary btn--lg" href="events.html">See the calendar</a>
+                <a class="btn btn--lg" href="events.html#weekly">Weekly schedule</a>
+              </div>
+            </div>
+
+            <div class="console__panel" role="tabpanel" id="panel-pc" aria-labelledby="tab-pc" hidden>
+              <h2 class="console__title">PC Stations</h2>
+              <p class="console__desc">RTX 5080 rigs on 27-inch 240Hz monitors, low-latency peripherals and a headset at every seat.</p>
+              <div class="facts">
+                <span class="fact"><svg class="glyph c-square" aria-hidden="true"><use href="#g-square"/></svg>24 rigs</span>
+                <span class="fact">240Hz QHD</span>
+                <span class="fact">From $7 an hour</span>
+              </div>
+              <div class="btn-row">
+                <a class="btn btn--primary btn--lg" href="book.html?zone=pc">Book a PC</a>
+                <a class="btn btn--lg" href="stations.html#pc">See the specs</a>
+              </div>
+            </div>
+
+            <div class="console__panel" role="tabpanel" id="panel-vr" aria-labelledby="tab-vr" hidden>
+              <h2 class="console__title">VR Bay</h2>
+              <p class="console__desc">Four tracked play spaces with a host on hand. Rhythm games, escape rooms and the occasional horror night.</p>
+              <div class="facts">
+                <span class="fact"><svg class="glyph c-triangle" aria-hidden="true"><use href="#g-triangle"/></svg>4 bays</span>
+                <span class="fact">30-minute minimum</span>
+                <span class="fact">From $12</span>
+              </div>
+              <div class="btn-row">
+                <a class="btn btn--primary btn--lg" href="book.html?zone=vr">Book the VR bay</a>
+                <a class="btn btn--lg" href="stations.html#vr">How VR works here</a>
+              </div>
+            </div>
+
+            <div class="console__panel" role="tabpanel" id="panel-retro" aria-labelledby="tab-retro" hidden>
+              <h2 class="console__title">Retro Corner</h2>
+              <p class="console__desc">CRT TVs, original cartridges and the couch classics you grew up arguing over.</p>
+              <div class="facts">
+                <span class="fact"><svg class="glyph c-circle" aria-hidden="true"><use href="#g-circle"/></svg>300+ cartridges</span>
+                <span class="fact">Free for members</span>
+              </div>
+              <div class="btn-row">
+                <a class="btn btn--primary btn--lg" href="book.html?zone=retro">Book the corner</a>
+                <a class="btn btn--lg" href="games.html?platform=retro">Browse retro games</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="console__hints" aria-hidden="true">
+            <span><span class="kbd">←</span><span class="kbd">→</span> Browse</span>
+            <span><span class="kbd"><svg class="glyph c-cross"><use href="#g-cross"/></svg></span> Select</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works ------------------------------------------------------- -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">From the door to your first match in five minutes</h2>
+          <p class="lede">Book ahead or walk in. Your station is logged in, updated and waiting when you arrive.</p>
+        </div>
+        <ol class="steps reveal" role="list">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Pick a station and a time</h3>
+            <p>Choose a PS5 lounge, PC, VR bay or the retro corner. Booking takes under a minute and you only pay when you arrive.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Check in at the counter</h3>
+            <p>Give your name, grab a drink and we hand you a controller. Bring your own account or use ours.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Play, order, stay late</h3>
+            <p>Scan the code at your seat to order food or add time. We bring everything to you.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Zones -------------------------------------------------------------- -->
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h-section">Four zones, one floor</h2>
+          <p class="lede">Each zone has its own shape. You'll see it on the floor signs, your booking and the menu at your seat.</p>
+        </div>
+        <div class="zones">
+          <a class="zone-card" href="stations.html#ps5" style="--accent: var(--cross)">
+            <!-- pic name="ps5-white" alt="A white PS5 console with a DualSense controller resting on top" sizes="(min-width: 1080px) 58vw, (min-width: 720px) 50vw, 100vw" -->
+            <span class="zone-card__tag"><svg class="glyph" aria-hidden="true"><use href="#g-cross"/></svg>PS5 Lounges</span>
+            <h3>Your own booth, your own sofa</h3>
+            <p>Eighteen private booths with 4K HDR screens, 3D audio headsets and the full PlayStation Plus Premium catalogue.</p>
+            <p class="zone-card__price">$9 an hour <span>per booth, up to four players</span></p>
+          </a>
+          <a class="zone-card" href="stations.html#pc" style="--accent: var(--square)">
+            <!-- pic name="rgb-keyboard" alt="A mechanical keyboard lit with rainbow RGB lighting" sizes="(min-width: 1080px) 42vw, (min-width: 720px) 50vw, 100vw" -->
+            <span class="zone-card__tag"><svg class="glyph" aria-hidden="true"><use href="#g-square"/></svg>PC Stations</span>
+            <h3>240Hz and nothing in the way</h3>
+            <p>RTX 5080 rigs with tournament peripherals.</p>
+            <p class="zone-card__price">$7 an hour <span>per seat</span></p>
+          </a>
+          <a class="zone-card" href="stations.html#vr" style="--accent: var(--triangle)">
+            <!-- pic name="vr-headset" alt="A white VR headset on a wooden table" sizes="(min-width: 1080px) 42vw, (min-width: 720px) 50vw, 100vw" -->
+            <span class="zone-card__tag"><svg class="glyph" aria-hidden="true"><use href="#g-triangle"/></svg>VR Bay</span>
+            <h3>Room-scale, with a spotter</h3>
+            <p>Four tracked bays and a host to get you set up.</p>
+            <p class="zone-card__price">$12 <span>per 30 minutes</span></p>
+          </a>
+          <a class="zone-card" href="stations.html#retro" style="--accent: var(--circle)">
+            <!-- pic name="retro-consoles" alt="Retro consoles, handhelds and cartridges under neon pink and blue light" sizes="100vw" -->
+            <span class="zone-card__tag"><svg class="glyph" aria-hidden="true"><use href="#g-circle"/></svg>Retro Corner</span>
+            <h3>Blow on the cartridge, it still works</h3>
+            <p>Original hardware on CRT TVs, from 8-bit to the PS2 era. Free for members, $5 an hour for everyone else.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware split ----------------------------------------------------- -->
+    <section class="section">
+      <div class="container split">
+        <div class="frame split__media">
+          <!-- pic name="ps5-blue" alt="A PS5 console and DualSense controller standing under blue and magenta light" sizes="(min-width: 900px) 46vw, 100vw" -->
+        </div>
+        <div>
+          <h2 class="h-section">Built around the DualSense</h2>
+          <p class="lede" style="margin-top: var(--s-5)">Every lounge is set up the way the games were designed to be played: haptics on, 3D audio in, input lag measured and kept under 10ms.</p>
+          <dl class="spec-list">
+            <div><dt>Display</dt><dd>65-inch 4K OLED, 120Hz with VRR</dd></div>
+            <div><dt>Audio</dt><dd>Pulse 3D headsets, plus a soundbar for the room</dd></div>
+            <div><dt>Controllers</dt><dd>Four DualSense, two DualSense Edge on request</dd></div>
+            <div><dt>Library</dt><dd>PlayStation Plus Premium and 120 owned titles</dd></div>
+            <div><dt>Seating</dt><dd>Four-seat sofa with side tables for food</dd></div>
+          </dl>
+          <div class="btn-row" style="margin-top: var(--s-6)">
+            <a class="btn btn--blue" href="games.html?platform=ps5">Browse PS5 games</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events ------------------------------------------------------------- -->
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">This week on the stage</h2>
+          <p class="lede">Sign up at the counter or online. Spectators are always welcome and the bar stays open.</p>
+        </div>
+        <div class="event-list">
+          <article class="event">
+            <div class="event__date" data-next="5"><div><b>13</b><br><span>Fri</span></div></div>
+            <div class="event__body">
+              <h3>Friday Night Cup: Tekken 8</h3>
+              <div class="event__meta">
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-clock"/></svg>7pm</span>
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-users"/></svg>32 players</span>
+                <span><svg class="glyph c-gold" aria-hidden="true"><use href="#g-trophy"/></svg>$150 prize pool</span>
+              </div>
+            </div>
+            <a class="btn btn--sm event__action" href="events.html">Sign up</a>
+          </article>
+          <article class="event">
+            <div class="event__date" data-next="6"><div><b>14</b><br><span>Sat</span></div></div>
+            <div class="event__body">
+              <h3>Co-op Saturday: Split Fiction marathon</h3>
+              <div class="event__meta">
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-clock"/></svg>2pm</span>
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-users"/></svg>Pairs</span>
+                <span><svg class="glyph c-cross" aria-hidden="true"><use href="#g-cross"/></svg>PS5 Lounges</span>
+              </div>
+            </div>
+            <a class="btn btn--sm event__action" href="events.html">Sign up</a>
+          </article>
+          <article class="event">
+            <div class="event__date" data-next="2"><div><b>17</b><br><span>Tue</span></div></div>
+            <div class="event__body">
+              <h3>Retro Tuesday: GoldenEye split-screen</h3>
+              <div class="event__meta">
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-clock"/></svg>8pm</span>
+                <span><svg class="glyph" aria-hidden="true"><use href="#g-users"/></svg>Teams of 4</span>
+                <span><svg class="glyph c-circle" aria-hidden="true"><use href="#g-circle"/></svg>Retro Corner</span>
+              </div>
+            </div>
+            <a class="btn btn--sm event__action" href="events.html">Sign up</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Café --------------------------------------------------------------- -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">Food you can eat with one hand</h2>
+          <div class="flow">
+            <p class="lede">Smash burgers, square-cut pizza, thick shakes and proper coffee, delivered to your station so you never have to pause.</p>
+            <a class="link" href="cafe.html">See the full menu</a>
+          </div>
+        </div>
+        <div class="food-strip">
+          <figure class="frame"><!-- pic name="burger" alt="A double smash burger with cheese, lettuce and tomato" sizes="(min-width: 900px) 40vw, 50vw" --><figcaption>Double smash, $13</figcaption></figure>
+          <figure class="frame"><!-- pic name="iced-coffee" alt="An iced latte in a tall glass" sizes="(min-width: 900px) 28vw, 50vw" --><figcaption>Iced latte, $5</figcaption></figure>
+          <figure class="frame"><!-- pic name="pizza" alt="A pizza cut into slices on a wooden board" sizes="(min-width: 900px) 28vw, 50vw" --><figcaption>Square pizza, $14</figcaption></figure>
+          <figure class="frame"><!-- pic name="milkshake" alt="A cookies and cream milkshake topped with a cookie" sizes="(min-width: 900px) 28vw, 50vw" --><figcaption>Cookie shake, $7</figcaption></figure>
+          <figure class="frame"><!-- pic name="donuts" alt="A stack of chocolate donuts with sprinkles" sizes="(min-width: 900px) 28vw, 50vw" --><figcaption>Sprinkle stack, $6</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rates -------------------------------------------------------------- -->
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="h-section">Pay by the hour, or go unlimited</h2>
+          <div class="flow">
+            <p class="lede">No sign-up fee. Members save on every hour and get the retro corner free.</p>
+            <a class="link" href="pricing.html">Compare all rates</a>
+          </div>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Drop in</h3>
+            <div class="price-card__amount"><b>$7</b><span>an hour, from</span></div>
+            <p>Walk in or book ahead. Pay for exactly the time you play.</p>
+            <ul class="ticks">
+              <li>Any zone, any time we're open</li>
+              <li>Book up to 7 days ahead</li>
+            </ul>
+            <a class="btn" href="book.html">Book a station</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Most popular</span>
+            <h3>Player membership</h3>
+            <div class="price-card__amount"><b>$29</b><span>a month</span></div>
+            <p>For regulars. Pays for itself in about four visits.</p>
+            <ul class="ticks">
+              <li>$2 off every hour</li>
+              <li>Retro corner included</li>
+              <li>Free Friday Night Cup entry</li>
+            </ul>
+            <a class="btn btn--primary" href="pricing.html#memberships">Become a member</a>
+          </article>
+          <article class="price-card">
+            <h3>Unlimited</h3>
+            <div class="price-card__amount"><b>$79</b><span>a month</span></div>
+            <p>Play as much as you like on PS5, PC and retro.</p>
+            <ul class="ticks">
+              <li>Unlimited hours, weekdays and weekends</li>
+              <li>Four VR sessions a month</li>
+              <li>Priority booking for events</li>
+            </ul>
+            <a class="btn" href="pricing.html#memberships">See what's included</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -------------------------------------------------------------- -->
+    <section class="section section--flush-top">
+      <div class="container visit">
+        <div class="visit__map" role="img" aria-label="Map showing Savepoint at 48 Harbour Street, two minutes from Docklands station">
+          <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none">
+            <path d="M-20 300 C 120 260, 200 330, 330 250 S 520 160, 640 190" stroke="rgb(91 140 255 / .35)" stroke-width="34" stroke-linecap="round"/>
+            <path d="M80 -20 L 160 420" stroke="rgb(168 186 255 / .16)" stroke-width="10"/>
+            <path d="M-20 120 L 640 170" stroke="rgb(168 186 255 / .16)" stroke-width="10"/>
+            <path d="M420 -20 L 360 420" stroke="rgb(168 186 255 / .12)" stroke-width="6"/>
+            <circle cx="150" cy="135" r="9" fill="#2fe0b8"/><text x="168" y="128" fill="#b2bce0" font-size="14" font-family="sans-serif">Docklands station</text>
+          </svg>
+          <div class="visit__pin"><b>Savepoint</b><i></i></div>
+        </div>
+        <div class="visit__card">
+          <h3>Find us on Harbour Street</h3>
+          <p class="muted">Two minutes from Docklands station, opposite the ferry terminal. Bike racks out front and late-night parking around the corner.</p>
+          <div class="hours">
+            <div><span>Mon–Thu</span><b>12pm–12am</b></div>
+            <div><span>Friday</span><b>12pm–2am</b></div>
+            <div><span>Saturday</span><b>10am–2am</b></div>
+            <div><span>Sunday</span><b>10am–10pm</b></div>
+          </div>
+          <p class="open-dot small" data-open-status>Open today</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="book.html">Book a station</a>
+            <a class="btn" href="https://maps.google.com/?q=48+Harbour+Street" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA ---------------------------------------------------------------- -->
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-band">
+          <!-- pic name="pad-neon" alt="" sizes="100vw" -->
+          <div class="flow">
+            <h2>Your controller is charged and waiting</h2>
+            <p>Booths fill up after 7pm on Fridays and Saturdays. Booking takes under a minute.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="book.html">Book a station</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>
